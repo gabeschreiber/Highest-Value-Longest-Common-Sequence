@@ -59,12 +59,6 @@ def main():
         A = lines[k + 1]
         B = lines[k + 2]
 
-        maxVal = highestVal(A, B, alphabet)
-        print(maxVal)
-        sequence = backtrack(A, B, alphabet, maxVal)
-        print(sequence)
-        verify(sequence, alphabet)
-
     except Exception as e:
         print(f"Error: {e}")
         exit(1)
