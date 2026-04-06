@@ -1,5 +1,7 @@
 import sys
 from highestValSubsequence import highestVal
+from backtracking import backtrack
+from verification import verify
 
 '''
 Input Format
@@ -59,6 +61,9 @@ def main():
 
         maxVal = highestVal(A, B, alphabet)
         print(maxVal)
+        sequence = backtrack(A, B, alphabet, maxVal)
+        print(sequence)
+        verify(sequence, alphabet)
 
     except Exception as e:
         print(f"Error: {e}")
