@@ -1,4 +1,5 @@
 import sys
+from highestValSubsequence import highestVal
 
 '''
 Input Format
@@ -56,6 +57,8 @@ def main():
         A = lines[k + 1]
         B = lines[k + 2]
 
+        maxVal = highestVal(A, B, alphabet)
+        print(maxVal)
 
     except Exception as e:
         print(f"Error: {e}")
