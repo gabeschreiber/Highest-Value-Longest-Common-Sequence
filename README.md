@@ -13,7 +13,7 @@ To run this program, complete the following steps:
 - The matchings listed in example.out correspond to example.in
 
 # Assumptions
-Refer to the example input and output files (`data/example.in` and `data/example.out`) for formatting of input data and output matches.
+Refer to the example input and output files (`test/example.in` and `test/example.out`) for formatting of input data and output matches.
 
 After running the command above, `output.out` will be the output matchings for `example.in` or any other input file provided. 
 
