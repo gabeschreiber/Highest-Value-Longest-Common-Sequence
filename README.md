@@ -23,6 +23,8 @@ The python terminal line requires at least an input file path to be specified to
 
 Use at least 10 nontrivial input files (i.e., contain strings of length at least 25). Graph the runtime of the 10 files.
 
+<img width="597" height="370" alt="Algos - Programming Assignment 3" src="https://github.com/user-attachments/assets/7282928a-5bce-4b63-a49b-273d6a6a4615" />
+
 # Question 2: Recurrence Equation
 
 Give a recurrence that is the basis of a dynamic programming algorithm to compute the HVLCS of strings A and B. You must provide the appropriate base cases, and explain why your recurrence is correct.
