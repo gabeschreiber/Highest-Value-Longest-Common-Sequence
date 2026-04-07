@@ -66,3 +66,23 @@ We try both options and take whichever gives a better result.
 
 # Question 3: Big-Oh
 
+Pseudocode:
+def highestVal(A, B, alphabet):
+      for i = 0 to len(A):
+                  m[i] = [0 for j in len(B)]
+
+      for i in range(len(m)):
+            for j in range(len(m(i)):
+                  if i == 0 or j == 0 -> m[i][j] = 0
+                  else if A[i] != B[j]:
+                        m[i][j] = max(m[i-1][j], m[i][j-1])
+                  else if A[i] == B[j]:
+                        m[i][j] = max(
+                              v(A(i)) + m[i-1][j-1],
+                              m[i-1][j],
+                              m[i][j-1])
+      return m[len(A)][len(B)]
+
+The Big-Oh runtime of the algorithm is is O(nm) where n is the length of A and m is the length of B.
+                              
+                  
