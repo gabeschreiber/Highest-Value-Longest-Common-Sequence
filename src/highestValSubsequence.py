@@ -11,4 +11,4 @@ def highestVal(A, B, alphabet):
             elif A[i-1] == B[j-1]:
                 m[i][j] = max(alphabet[A[i-1]] + m[i-1][j-1], m[i-1][j], m[i][j-1])
 
-    return m[a][b]
+    return m

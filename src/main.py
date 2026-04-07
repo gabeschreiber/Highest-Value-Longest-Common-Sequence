@@ -32,15 +32,6 @@ def main():
     input_file_path = sys.argv[1]
     output_file_path = sys.argv[2] if len(sys.argv) > 2 else None
 
-    if len(sys.argv) < 2:
-        print("No input file specified.")
-        print("Command line format: python main.py <input_file_path> [output_file_path]")
-        print("Example: python main.py data/example1.in data/example.out")
-        exit(1)
-
-    input_file_path = sys.argv[1]
-    output_file_path = sys.argv[2] if len(sys.argv) > 2 else None
-
     try:
         # open file for command line input and read lines into a list of strings
         with open(input_file_path, 'r') as f:
@@ -58,6 +49,25 @@ def main():
 
         A = lines[k + 1]
         B = lines[k + 2]
+
+        # Run highestVal and backtrack
+        m = highestVal(A, B, alphabet)
+        max_value = m[len(A)][len(B)]
+        sequence = backtrack(A, B, alphabet, m)
+        is_valid = verify(sequence, alphabet)
+
+        # Write output
+        output_lines = [
+            sequence,
+            str(max_value),
+            str(is_valid)
+        ]
+
+        if output_file_path:
+            with open(output_file_path, 'w') as f:
+                f.write('\n'.join(output_lines))
+        else:
+            print('\n'.join(output_lines))
 
     except Exception as e:
         print(f"Error: {e}")

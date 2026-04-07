@@ -10,5 +10,3 @@ def verify(sequence, alphabet):
     vString += " = " + str(sum)
 
     return vString
-
-print(verify("cb", {"a": 2, "b": 4, "c": 5}))
