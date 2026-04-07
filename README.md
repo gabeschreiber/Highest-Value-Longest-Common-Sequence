@@ -6,7 +6,7 @@ To run this program, complete the following steps:
 - Open terminal to the Highest-Value-Longest-Common-Sequence directory
 - Run the program using this terminal command:
 
-      python main.py example.in output.out
+      python main.py test/example.in test/output.out
 
 - This will run the highest value computation, backtracking algorithm, and the verifier.
 - The results will be written into data/output.out

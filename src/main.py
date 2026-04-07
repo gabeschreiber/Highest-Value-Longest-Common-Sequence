@@ -2,6 +2,7 @@ import sys
 from highestValSubsequence import highestVal
 from backtracking import backtrack
 from verification import verify
+import time
 
 '''
 Input Format
@@ -22,6 +23,7 @@ B
 
 
 def main():
+    # start = time.time()
     # parse input from example1.in
     if len(sys.argv) < 2:
         print("No input file specified.")
@@ -58,9 +60,8 @@ def main():
 
         # Write output
         output_lines = [
-            sequence,
             str(max_value),
-            str(is_valid)
+            sequence
         ]
 
         if output_file_path:
@@ -69,6 +70,8 @@ def main():
         else:
             print('\n'.join(output_lines))
 
+        # end = time.time()
+        # print(f"{end - start:.6f}")
     except Exception as e:
         print(f"Error: {e}")
         exit(1)
