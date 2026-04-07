@@ -23,7 +23,8 @@ The python terminal line requires at least an input file path to be specified to
 
 Use at least 10 nontrivial input files (i.e., contain strings of length at least 25). Graph the runtime of the 10 files.
 
-<img width="597" height="370" alt="Algos - Programming Assignment 3" src="https://github.com/user-attachments/assets/7282928a-5bce-4b63-a49b-273d6a6a4615" />
+<img width="600" height="371" alt="Runtime (s) vs  String Length" src="https://github.com/user-attachments/assets/be6a0f93-2af7-4530-a77c-812442a25e13" />
+
 
 # Question 2: Recurrence Equation
 
